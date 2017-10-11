@@ -1,7 +1,21 @@
 {
-  "name": "my-app",
-  "version": "0.0.0",
-  "license": "MIT",
+  "name": "blogspot",
+  "version": "0.0.1",
+  "description": "Create your own blog using blogspot.",
+  "author": "Dawid Liszka",
+  "license": "ISC",
+  "keywords": [
+    "blogspot",
+    "blog"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Davlis/blogspot.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Davlis/blogspot/issues"
+  },
+  "homepage": "https://github.com/Davlis/blogspot#readme",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",

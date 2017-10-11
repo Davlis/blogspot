@@ -11,7 +11,10 @@ export class LoginGuard implements CanActivate {
   canActivate(): Promise<boolean> {
     return new Promise(resolve => {
       // TODO: inject localStorage and check if user is logged in.
-      resolve(false);
+      {
+        this.router.navigate(['/main']);
+        resolve(false);
+      }
     });
   }
 
