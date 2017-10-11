@@ -1,0 +1,13 @@
+<div class="login-container">
+  <form class="login-form" [formGroup]="formGroup" (ngSubmit)="submit()">
+    <div class="form-group">
+      <input formControlName="username" class="text-input" type="text" placeholder="Username" />
+    </div>
+    <div class="form-group">
+      <input formControlName="password" class="password-input" type="password" placeholder="Password" />
+    </div>
+    <button type="submit" class="button submit">Login</button> 
+  </form>
+</div>
+
+{{formGroup.value | json}}
