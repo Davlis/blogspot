@@ -8,10 +8,6 @@ const mainLayoutRoutes: Routes = [
     path: '',
     component: MainLayoutComponent,
     children: [
-      {
-        path: 'login',
-        loadChildren: 'app/login/login.module#LoginModule'
-      }
     ]
   }
 ];

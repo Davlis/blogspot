@@ -31,9 +31,14 @@ const appRoutes: Routes = [
         loadChildren: 'app/login/login.module#LoginModule',
       },
       {
+        path: 'register',
+        pathMatch: 'full',
+        loadChildren: 'app/register/register.module#RegisterModule',
+      },
+      {
         path: '**',
         redirectTo: 'main',
-      }
+      },
     ]
   }
 ];
