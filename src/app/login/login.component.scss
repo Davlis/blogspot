@@ -1,7 +1,4 @@
-html, body {
-  height: 100%;
-  width: 100%;
-}
+$button-width: 36px;
 
 .login-container {
   display: flex;
@@ -31,7 +28,7 @@ html, body {
 }
 
 .button {
-  height: 36px;
+  height: $button-width
 }
 
 .button.submit {
