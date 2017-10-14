@@ -1,10 +1,21 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { Ng2Webstorage } from 'ngx-webstorage';
+import { AuthService } from './services/auth.service';
+import { DataService } from './api/data.service';
+import { UserService } from './api/user.service';
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+    Ng2Webstorage,
   ],
-  declarations: []
+  providers: [
+    AuthService,
+    DataService,
+    UserService,
+  ],
+  exports: [
+  ]
 })
 export class CoreModule { }

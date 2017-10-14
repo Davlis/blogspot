@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
-
+import { CoreModule } from './+core/core.module';
 import { AuthGuard } from './+core/guards/auth.guard';
 import { LoginGuard } from './+core/guards/login.guard';
 
@@ -27,7 +27,7 @@ const appRoutes: Routes = [
       {
         path: 'login',
         pathMatch: 'full',
-        canActivate: [LoginGuard],
+        //canActivate: [LoginGuard],
         loadChildren: 'app/login/login.module#LoginModule',
       },
       {
@@ -45,6 +45,7 @@ const appRoutes: Routes = [
   ],
   imports: [
     HttpModule,
+    CoreModule,
     BrowserModule,
     BrowserAnimationsModule,
     RouterModule.forRoot(appRoutes),
